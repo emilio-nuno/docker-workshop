@@ -1,7 +1,7 @@
 sources:
   - name: raw_data
     description: Raw taxi trip data from NYC TLC
-    database: terraform-demo-486422
+    database: "{{ env_var('DBT_GCP_PROJECT_ID') }}"
     schema: nytaxi
     
     tables:
