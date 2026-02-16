@@ -1,0 +1,12 @@
+sources:
+  - name: raw_data
+    description: Raw taxi trip data from NYC TLC
+    database: terraform-demo-486422
+    schema: nytaxi
+    
+    tables:
+      - name: green_tripdata
+        description: Raw green taxi trip records
+
+      - name: yellow_tripdata
+        description: Raw yellow taxi trip records
